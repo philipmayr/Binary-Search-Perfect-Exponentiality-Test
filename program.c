@@ -53,7 +53,7 @@ int main()
 
     for (;;)
     {    
-        printf("Enter a perfect power candidate to test perfect exponentiality: ");
+        printf("Enter a candidate integer to test perfect exponentiality: ");
         
         // integer input validation
         // https://jackstromberg.com/2013/02/how-to-validate-numeric-integer-input-in-c/
@@ -68,7 +68,7 @@ int main()
             
             printf("Invalid input.");
             printf("\n\n");
-            printf("Enter a perfect power candidate to test perfect exponentiality: ");
+            printf("Enter a candidate integer to test perfect exponentiality: ");
             
             status = scanf("%d", & input);
     	}
