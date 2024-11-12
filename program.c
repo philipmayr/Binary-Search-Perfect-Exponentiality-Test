@@ -68,7 +68,7 @@ int main()
             
             printf("Invalid input.");
             printf("\n\n");
-            printf("Enter a perfect power candidate to test for perfect exponentiality: ");
+            printf("Enter a perfect power candidate to test perfect exponentiality: ");
             
             status = scanf("%d", & input);
     	}
