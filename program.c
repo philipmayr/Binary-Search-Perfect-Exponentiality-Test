@@ -17,7 +17,7 @@ int exponentiate(int base, int index)
     if (base == 0) return 0;
     if (index == 0) return 1;
     if (index == 1) return base;
-
+    
     int power = 1;
     
     while (index > 0)
@@ -28,7 +28,7 @@ int exponentiate(int base, int index)
         index >>= 1;
     }
     
-    return power;    
+    return power;
 }
 
 int test_perfect_exponentiality(int perfect_power_candidate)
@@ -50,20 +50,20 @@ int test_perfect_exponentiality(int perfect_power_candidate)
 int main()
 {
     int perfect_power_candidate;
-
+    
     for (;;)
-    {    
+    {
         printf("Enter a candidate integer to test perfect exponentiality: ");
         
         // integer input validation
         // https://jackstromberg.com/2013/02/how-to-validate-numeric-integer-input-in-c/
         
         int input, status, buffer;
-
-    	status = scanf("%d", & input);
-    	
-    	while (status != 1)
-    	{
+        
+        status = scanf("%d", & input);
+        	
+        while (status != 1)
+        {
             while ((buffer = getchar()) != EOF && buffer != '\n');
             
             printf("Invalid input.");
@@ -71,11 +71,11 @@ int main()
             printf("Enter a candidate integer to test perfect exponentiality: ");
             
             status = scanf("%d", & input);
-    	}
-    
-    	perfect_power_candidate = input;
-    	
-    	if (test_perfect_exponentiality(perfect_power_candidate)) printf("%d is a perfect power.", perfect_power_candidate);
+        }
+        
+        perfect_power_candidate = input;
+        
+        if (test_perfect_exponentiality(perfect_power_candidate)) printf("%d is a perfect power.", perfect_power_candidate);
         else printf("%d is not a perfect power.", perfect_power_candidate);
         
         printf("\n\n");
