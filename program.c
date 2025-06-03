@@ -1,7 +1,6 @@
 // Perfect Exponentiality Test
 
 #include <stdio.h>
-#include <math.h>
 
 int find_binary_logarithm(int number)
 {
@@ -64,7 +63,7 @@ int main()
         	
         while (status != 1)
         {
-            while ((buffer = getchar()) != EOF && buffer != '\n');
+            while ((buffer = getchar()) != EOF && buffer != "\n");
             
             printf("Invalid input.");
             printf("\n\n");
